@@ -1,0 +1,15 @@
+.OrderPage{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    h1 {
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+    }
+}

@@ -1,0 +1,152 @@
+.Post {
+    width: 60%;
+    min-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border-bottom: 2px dashed #dbdbdb;
+
+    .post-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .post-info {
+            width: 100%;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1rem;
+
+            .avatar {
+                width: 35px;
+                height: 35px;
+                border-radius: 50%;
+                overflow: hidden;
+
+                img {
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .name {
+                font-weight: 600;
+            }
+
+            .dot {
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background-color: #ccc;
+                margin: 0 10px;
+                align-self: center;
+            }
+
+            .time {
+                opacity: 0.8;
+                font-size: 0.9rem;
+            }
+        }
+
+        .more {
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+    }
+
+    .post-image {
+        cursor: pointer;
+
+        img {
+            transition: .2s ease;
+        }
+
+        &:hover img {
+            transform: scale(1.05);
+        }
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+
+        .action-group {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+
+            .action {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 5px;
+                transition: .2s ease;
+
+
+
+                .action-icon {
+                    font-size: 1.5rem;
+                    display: flex;
+                    align-items: center;
+                    cursor: pointer;
+
+                    &:hover {
+                        transform: scale(1.2);
+                    }
+                }
+
+                .action-name {
+                    font-size: 1rem;
+                    align-self: center;
+                }
+
+                .liked-color {
+                    color: #ff3040;
+                }
+            }
+        }
+
+        .like-number {
+            font-size: 0.9rem;
+
+            &:hover {
+                cursor: default;
+                text-decoration: underline;
+            }
+        }
+    }
+
+    .description {
+        font-size: 0.9rem;
+        font-weight: 400;
+        text-align: justify;
+
+        .owner {
+            font-weight: 700;
+            margin-right: 8px;
+        }
+    }
+
+    &>.comment-input {
+        display: flex;
+
+        .comment-button {
+            padding: 0 15px;
+            border: none;
+            outline: none;
+            background-color: transparent;
+            color: dodgerblue;
+            font-weight: 700;
+            cursor: pointer;
+            transition: .2s ease;
+
+            &:hover {
+                color: #00376b;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,41 @@
+.Textarea {
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+
+    textarea {
+        overflow: unset;
+        width: 100%;
+        resize: none;
+        outline: none;
+        border: none;
+        line-height: 1.5;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            background: #bdbdbd;
+
+            &:hover {
+                background-color: #7f7e7e;
+            }
+        }
+    }
+
+    .scrollY {
+        overflow-y: auto;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+}

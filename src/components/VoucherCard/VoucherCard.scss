@@ -1,0 +1,58 @@
+// VoucherCard.scss
+.voucher-card {
+    width: 300px;
+    background: linear-gradient(45deg, #36a9de, #2ecc71, #f1c40f);
+    border-radius: 12px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1.08);
+    }
+
+    .voucher-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 8px;
+        justify-content: space-between;
+
+        .voucher-group{
+            display: flex;
+            align-items: center;
+            .voucher-circle {
+                background-color: #e74c3c;
+                width: 16px;
+                height: 16px;
+                border-radius: 50%;
+                margin-right: 8px;
+            }
+    
+            .voucher-id {
+                font-size: 16px;
+                color: #fff;
+            }
+        }
+    }
+
+    .voucher-reduction {
+        display: flex;
+        font-size: 18px;
+        color: #fff;
+        align-items: flex-end;
+        justify-content: space-between;
+        .voucher-value{
+            font-size: 20px;
+            font-weight: 600;
+            small{
+                font-weight: 300;
+            }
+        }
+    }
+
+    .voucher-percent {
+        font-size: 20px;
+        font-weight: bold;
+        color: #fff;
+    }
+}

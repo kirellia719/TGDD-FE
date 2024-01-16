@@ -1,0 +1,36 @@
+.toggle-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 60px;
+    border-radius: 6px;
+
+    .switch {
+        height: 22px;
+        width: 40px;
+        border-radius: 25px;
+        cursor: pointer;
+        background-color: #737373;
+
+        &::before {
+            content: "";
+            background-color: #fff;
+            position: absolute;
+            height: 15px;
+            width: 15px;
+            border-radius: 50%;
+            top: 50%;
+            left: 5px;
+            transform: translateY(-50%);
+            transition: .2s ease;
+        }
+
+        &.on::before {
+            left: 20px;
+        }
+    }
+
+    .on {
+        background-color: #0095f6;
+    }
+}

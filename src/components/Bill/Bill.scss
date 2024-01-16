@@ -1,0 +1,113 @@
+.Bill{
+    background-color: #fff;
+    width: var(--width-container);
+    padding: 20px;
+    .title{
+        font-size: 18px;
+        font-weight: 500;
+    }
+
+    .Customer-Info{
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        .Info-Line{
+            display: flex;
+            justify-content: space-between;
+            .Info{
+                width: 100%;
+                display: flex;
+                gap: 10px;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .Info-Value{
+                    font-weight: 500;
+                    flex-grow: 1;
+                    textarea{
+                        width: 100%;
+                        padding: 10px;
+                        line-height: 20px;
+                        outline: none;
+                        resize: vertical;
+                    }
+                }
+            }
+
+            &.Voucher{
+                margin-top: 20px;
+            }
+        }
+
+        .Voucher-Info{
+            border-top: 1px solid #ccc;
+            margin: 15px 0;
+            padding: 15px 0;
+            display: flex;
+            align-items: center;
+
+            .Voucher-Area{
+                width: 50%;
+                padding: 10px;
+                .Voucher-Input{
+                    width: 150px;
+                    margin: 10px 0;
+                    padding: 5px 10px;
+                    border-radius: 3px;
+                    outline: none;
+                    border: 1px solid #888;
+                    color: #333;
+                    margin-right: 10px;
+                }
+
+                .Apply-Button {
+                    border: none;
+                    padding: 5px 15px;
+                    background-color: #ffa006;
+                    font-size: 14px;
+                    color: #fff;
+                    border-radius: 5px;
+                    cursor: pointer;
+                }
+            }
+
+            .Voucher-Card{
+                display: flex;
+            }
+        }
+
+        .Calculate{
+            margin-top: 10px;
+            border-top: 2px solid gray;
+            padding-top:  10px;
+            display: flex;
+            justify-content: space-between;
+
+
+            .Total{
+                color: var(--main-color);
+                font-weight: 700;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .Submit-Button{
+        padding: 15px;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase;
+        color: #fff;
+        background-color: var(--main-color-hover);
+        border-radius: 5px;
+        transition: 0.3s;
+
+        &:hover{
+            cursor: pointer;
+            background-color: var(--main-color);
+        }
+    }
+}

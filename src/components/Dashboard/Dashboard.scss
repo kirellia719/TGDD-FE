@@ -1,0 +1,30 @@
+.Dashboard {
+    --rightside-width: 0;
+
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+
+    .Content-Container {
+        width: calc(100% - var(--rightside-width));
+        transition: .3s ease;
+    }
+
+    .RightSide-Container {
+        width: var(--rightside-width);
+        border-left: 1.5px solid #dbdbdb;
+        position: sticky;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+    }
+
+    @media only screen and (max-width: 1176px) {
+        --rightside-width: 280px;
+    }
+
+    @media only screen and (max-width: 950px) {
+        --rightside-width: 0px;
+    }
+}

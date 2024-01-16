@@ -1,0 +1,15 @@
+.Logo {
+    text-align: center;
+
+    .logo-text {
+        font-family: 'Dancing Script', cursive;
+        font-size: 2rem;
+        color: black;
+    }
+
+    @media only screen and (max-width: 1076px) {
+        .logo-text {
+            font-size: 1.5rem;
+        }
+    }
+}

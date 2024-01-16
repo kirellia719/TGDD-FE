@@ -1,0 +1,116 @@
+.OrderList {
+    --width-container: 1000px;
+
+    width: var(--width-container);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    .Form-Filter {
+        display: flex;
+
+        .Order-Infos {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 10px 20px;
+            text-align: end;
+
+            b {
+                font-size: 20px;
+            }
+        }
+
+        // FilterComponentVietnamese.scss
+
+        .filter-container {
+            display: flex;
+            gap: 15px;
+
+            .filter-label {
+                display: flex;
+                flex-direction: column;
+
+                label {
+                    margin-bottom: 5px;
+                    font-weight: bold;
+                }
+
+                select,
+                input {
+                    padding: 8px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    font-size: 14px;
+                }
+
+                .Filter-Button {
+                    padding: 8px 20px;
+                    color: #fff;
+                    border-radius: 4px;
+                    cursor: pointer;
+                    background-color: var(--main-color);
+
+                    &:hover {
+                        background-color: var(--main-color-hover);
+                    }
+                }
+
+            }
+
+
+        }
+    }
+
+    .confirm-button {
+        font-size: 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+
+    // StatusCard.scss
+
+    .status-card {
+        padding: 6px 15px;
+        text-align: center;
+        font-family: 'Arial', sans-serif;
+        transition: background-color 0.3s ease;
+        border-radius: 100px; // Add border-radius for rounded corners
+        font-size: 12px;
+
+        &.success {
+            background-color: #00a952; // Soft green background for success
+            color: #fff; // Dark text color for success
+        }
+
+        &.waiting {
+            background-color: #ffb342; // Soft salmon background for waiting
+            color: #fff; // Dark text color for waiting
+        }
+
+        span {
+            display: block;
+        }
+
+
+    }
+
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .right {
+        display: flex;
+        justify-content: flex-end;
+    }
+        
+
+
+
+
+
+
+}
